@@ -9,7 +9,6 @@ import DarkAuthorityBanner from "@/components/DarkAuthorityBanner";
 import CurriculumSection from "@/components/CurriculumSection";
 import FeaturedCaseStudySection from "@/components/FeaturedCaseStudySection";
 import OutcomeWall from "@/components/OutcomeWall";
-import RoadmapRoadmapSection from "@/components/RoadmapRoadmapSection";
 import AudienceSection from "@/components/AudienceSection";
 import VideoWallSection from "@/components/VideoWallSection";
 import CourseOfferSection from "@/components/CourseOfferSection";
@@ -49,9 +48,6 @@ export default function Home() {
 
       {/* S12: Real Thinkers, Real Transformation Outcome Wall (10 Result Tiles) */}
       <OutcomeWall />
-
-      {/* S13: 30-Day Practice Roadmap ("What your 30 days will look like" in 4 #0D0906 cards) */}
-      <RoadmapRoadmapSection />
 
       {/* S15: Audience Expectations (2026 is the year... / Not for you vs For you) */}
       <AudienceSection />
