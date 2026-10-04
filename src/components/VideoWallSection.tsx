@@ -38,7 +38,7 @@ export default function VideoWallSection() {
   ];
 
   return (
-    <section className="py-16 sm:py-24 bg-[#44332C] text-white">
+    <section id="testimonials" className="py-16 sm:py-24 bg-[#44332C] text-white">
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-[850px] mb-12 sm:mb-16">
           <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white leading-[1.12]">

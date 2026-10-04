@@ -63,7 +63,7 @@ export default function RoadmapRoadmapSection() {
   ];
 
   return (
-    <section className="py-16 sm:py-24 bg-[#FBF6F4] text-[#1F1E1E]">
+    <section id="method" className="py-16 sm:py-24 bg-[#FBF6F4] text-[#1F1E1E]">
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
         {/* Header */}
         <h2 className="max-w-[900px] text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#1F1E1E] leading-[1.12]">

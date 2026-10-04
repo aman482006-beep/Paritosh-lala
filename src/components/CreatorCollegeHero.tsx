@@ -11,7 +11,7 @@ export default function CreatorCollegeHero() {
   const { hero, checkoutUrl } = courseData;
 
   return (
-    <section className="relative pt-24 pb-14 sm:pt-32 sm:pb-20 bg-[#F1F1F1] text-[#1F1E1E]">
+    <section id="why-paritosh" className="relative pt-24 pb-14 sm:pt-32 sm:pb-20 bg-[#F1F1F1] text-[#1F1E1E]">
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
         {/* Creator College Top Pill */}
         <div className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#0D0906] text-white text-xs sm:text-sm font-mono tracking-widest uppercase mb-6 sm:mb-8 shadow-sm">

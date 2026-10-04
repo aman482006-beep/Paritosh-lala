@@ -41,7 +41,8 @@ export default function StrugglingWithSection() {
   ];
 
   return (
-    <section id="struggling" className="py-16 sm:py-24 bg-[#FBF6F4] text-[#1F1E1E]">
+    <section id="problem" className="py-16 sm:py-24 bg-[#FBF6F4] text-[#1F1E1E] relative">
+      <div id="struggling" className="absolute -top-20" />
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-[850px] mb-12 sm:mb-16">
