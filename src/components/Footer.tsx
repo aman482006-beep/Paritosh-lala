@@ -5,6 +5,8 @@ import Link from "next/link";
 import { ArrowUpRight, Instagram, Youtube, Linkedin } from "lucide-react";
 import { courseData } from "@/content/paritosh";
 
+import BrandLogo from "./BrandLogo";
+
 export default function Footer() {
   const { brand, socials, legalLinks, checkoutUrl } = courseData;
 
@@ -15,13 +17,10 @@ export default function Footer() {
           {/* Brand Col */}
           <div className="md:col-span-5 flex flex-col justify-between">
             <div>
-              <div className="flex items-center gap-2 mb-2.5">
-                <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-white text-[#0D0906] font-bold text-xs tracking-wider">
-                  PA
-                </span>
-                <span className="text-sm font-bold tracking-tight text-white">
-                  {brand.name}
-                </span>
+              <div className="mb-4">
+                <Link href="/" aria-label="Introvert To Icon by Paritosh Anand">
+                  <BrandLogo variant="dark" size="md" />
+                </Link>
               </div>
 
               <p className="text-xs text-neutral-400 max-w-sm leading-relaxed font-normal">

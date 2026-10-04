@@ -68,7 +68,7 @@ export default function FounderStory() {
             <div className="p-2 sm:p-2.5 rounded-3xl bg-white border border-[#E5E7EB] shadow-sm">
               <div className="relative aspect-[16/10] w-full rounded-2xl overflow-hidden bg-neutral-900">
                 <Image
-                  src={assetPath("/images/paritosh-speaking.webp")}
+                  src={assetPath("/images/paritosh-speaking.png")}
                   alt="Paritosh Anand public speaking on stage"
                   fill
                   sizes="(max-width: 1024px) 100vw, 40vw"

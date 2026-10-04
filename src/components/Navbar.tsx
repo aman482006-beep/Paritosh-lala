@@ -5,6 +5,8 @@ import Link from "next/link";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { courseData } from "@/content/paritosh";
 
+import BrandLogo from "./BrandLogo";
+
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -42,27 +44,18 @@ export default function Navbar() {
       <header
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
           isScrolled
-            ? "bg-[#F1F1EF]/90 backdrop-blur-md border-b border-[#E5E7EB] py-3 shadow-[0_1px_4px_rgba(0,0,0,0.02)]"
-            : "bg-transparent py-4 sm:py-5"
+            ? "bg-[#F1F1EF]/90 backdrop-blur-md border-b border-[#E5E7EB] py-2.5 shadow-[0_1px_4px_rgba(0,0,0,0.02)]"
+            : "bg-transparent py-3 sm:py-4"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-          {/* Brand Logo */}
+          {/* Brand Logo Component */}
           <Link
             href="/"
-            className="flex items-center gap-2.5 transition-opacity hover:opacity-85"
+            aria-label="Introvert To Icon by Paritosh Anand"
+            className="flex items-center gap-2 transition-opacity hover:opacity-85 py-1"
           >
-            <span className="flex h-7 w-7 sm:h-8 sm:w-8 items-center justify-center rounded-lg bg-[#1F1E1E] text-white font-bold text-xs tracking-wider shrink-0">
-              PA
-            </span>
-            <div className="flex flex-col">
-              <span className="text-xs sm:text-sm font-extrabold tracking-tight text-[#1F1E1E] leading-tight">
-                {courseData.brand.name}
-              </span>
-              <span className="text-[9px] sm:text-[10px] uppercase font-mono tracking-widest text-[#6B7280]">
-                BY {courseData.brand.instructor}
-              </span>
-            </div>
+            <BrandLogo variant="light" size="sm" />
           </Link>
 
           {/* Desktop Nav Items */}
@@ -103,14 +96,9 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div className="xl:hidden fixed inset-0 z-50 bg-[#F1F1EF]/98 backdrop-blur-2xl flex flex-col justify-between p-6 sm:p-10 animate-fadeIn">
           <div className="flex items-center justify-between pb-6 border-b border-[#E5E7EB]">
-            <div className="flex items-center gap-2.5">
-              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#0D0906] text-white font-semibold text-xs tracking-wider">
-                PA
-              </span>
-              <span className="text-sm font-bold tracking-tight text-[#1F1E1E]">
-                {courseData.brand.name}
-              </span>
-            </div>
+            <Link href="/" onClick={() => setMobileMenuOpen(false)}>
+              <BrandLogo variant="light" size="sm" />
+            </Link>
 
             <button
               onClick={() => setMobileMenuOpen(false)}

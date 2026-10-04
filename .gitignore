@@ -36,3 +36,7 @@ next-env.d.ts
 
 # jetro
 .jetro/
+
+# temp cache
+.freebuff/
+

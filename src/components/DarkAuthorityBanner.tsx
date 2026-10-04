@@ -16,13 +16,13 @@ export default function DarkAuthorityBanner() {
       name: "Paritosh Anand",
       role: "Lead Instructor & TEDx Speaker",
       desc: "Architect of Introvert To Icon, keynote speaker, and narrative strategist.",
-      image: assetPath("/images/paritosh-portrait.webp"),
+      image: assetPath("/images/paritosh-portrait.png"),
     },
     {
       name: "We Smile Media",
       role: "Creative Direction & Storytelling",
       desc: "Production studio crafting high-impact commercial campaigns and long-form visual narratives.",
-      image: assetPath("/images/paritosh-speaking.webp"),
+      image: assetPath("/images/paritosh-speaking.png"),
     },
     {
       name: "Speech Mechanics Lab",
