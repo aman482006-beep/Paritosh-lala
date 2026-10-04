@@ -38,9 +38,6 @@ export default function CourseOfferSection() {
                 <div className="mb-4">
                   <BrandLogo variant="light" size="md" />
                 </div>
-                <span className="text-[11px] font-mono font-bold text-gold-700 tracking-widest uppercase block mb-2">
-                  OFFICIAL ENROLLMENT · INTROVERT TO ICON
-                </span>
 
                 <h3 className="text-2xl sm:text-3xl font-semibold text-[#1F1E1E] tracking-tight">
                   {offer.title}

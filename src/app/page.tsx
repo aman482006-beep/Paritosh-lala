@@ -7,13 +7,10 @@ import SpeechAnxietySplitSection from "@/components/SpeechAnxietySplitSection";
 import ProgramOverviewSection from "@/components/ProgramOverviewSection";
 import DarkAuthorityBanner from "@/components/DarkAuthorityBanner";
 import CurriculumSection from "@/components/CurriculumSection";
-import BeginnerSection from "@/components/BeginnerSection";
 import FeaturedCaseStudySection from "@/components/FeaturedCaseStudySection";
 import OutcomeWall from "@/components/OutcomeWall";
 import RoadmapRoadmapSection from "@/components/RoadmapRoadmapSection";
-import PersonaUseCases from "@/components/PersonaUseCases";
 import AudienceSection from "@/components/AudienceSection";
-import HowIsThisDifferentSection from "@/components/HowIsThisDifferentSection";
 import VideoWallSection from "@/components/VideoWallSection";
 import CourseOfferSection from "@/components/CourseOfferSection";
 import FAQSection from "@/components/FAQSection";
@@ -47,9 +44,6 @@ export default function Home() {
       {/* S9: The 10 Core Focus Areas / Curriculum Breakdown */}
       <CurriculumSection />
 
-      {/* S10: Beginner Section ("I'm a complete introvert — is it too late for me?") */}
-      <BeginnerSection />
-
       {/* S11: Featured Deep-Dive Case Study (Breakthrough Quote + 3 Stat Badges) */}
       <FeaturedCaseStudySection />
 
@@ -59,14 +53,8 @@ export default function Home() {
       {/* S13: 30-Day Practice Roadmap ("What your 30 days will look like" in 4 #0D0906 cards) */}
       <RoadmapRoadmapSection />
 
-      {/* S14: Discipline Personas ("I'm a professional, I want to...") */}
-      <PersonaUseCases />
-
       {/* S15: Audience Expectations (2026 is the year... / Not for you vs For you) */}
       <AudienceSection />
-
-      {/* S16: Objection Handling (How is this different? & Busy schedule fit) */}
-      <HowIsThisDifferentSection />
 
       {/* S17: Dark Video Review Wall ("Hear from past students" on #44332C with #E1D5CB cards) */}
       <VideoWallSection />

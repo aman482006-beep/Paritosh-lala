@@ -20,12 +20,6 @@ export default function CreatorCollegeHero() {
           <BrandLogo variant="light" size="lg" />
         </div>
 
-        {/* Creator College Top Pill */}
-        <div className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#0D0906] text-white text-xs sm:text-sm font-mono tracking-widest uppercase mb-6 sm:mb-8 shadow-sm">
-          <span className="w-2 h-2 rounded-full bg-gold-400 animate-pulse" />
-          <span>OFFICIAL ENROLLMENT OPEN • INTROVERT TO ICON</span>
-        </div>
-
         {/* Centered Large Editorial Headline (Creator College 4xl-heading: text-6xl font-bold) */}
         <h1 className="max-w-[960px] text-3xl sm:text-5xl md:text-6xl lg:text-[64px] font-bold tracking-tight text-[#1F1E1E] leading-[1.08] uppercase">
           SPEAK WITH CONFIDENCE, MASTER STORYTELLING AND EXPRESS WHO YOU ARE
@@ -97,13 +91,9 @@ export default function CreatorCollegeHero() {
                   Paritosh Anand, Storyteller &amp; Speaker
                 </h3>
 
-                {/* Clean Centered Paragraphs */}
+                {/* Clean Centered Paragraph */}
                 <p className="mt-6 text-sm sm:text-base text-neutral-300 leading-relaxed font-normal max-w-[95%]">
                   I spent years overthinking every room I walked into. Every speaking technique and storytelling hook was reverse-engineered through trial and error.
-                </p>
-
-                <p className="mt-4 text-xs sm:text-sm text-neutral-400 leading-relaxed font-normal max-w-[95%]">
-                  I will give you the exact frameworks I used to step onto TEDx stages, build an engaged community, and express ideas with authority.
                 </p>
               </div>
 
@@ -134,13 +124,9 @@ export default function CreatorCollegeHero() {
                   Paritosh Anand, Creator with 1.5M+ audience
                 </h3>
 
-                {/* Clean Centered Paragraphs */}
+                {/* Clean Centered Paragraph */}
                 <p className="mt-6 text-sm sm:text-base text-neutral-300 leading-relaxed font-normal max-w-[95%]">
                   In business, the person who explains the problem most clearly wins the contract. Communication is the single most leveraged skill an entrepreneur or creator can master.
-                </p>
-
-                <p className="mt-4 text-xs sm:text-sm text-neutral-400 leading-relaxed font-normal max-w-[95%]">
-                  I will teach you the practical, repeatable Record &amp; Review method inside Introvert To Icon so you never second-guess your speech again.
                 </p>
               </div>
 
