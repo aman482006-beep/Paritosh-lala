@@ -41,7 +41,7 @@ export default function VideoWallSection() {
     <section className="py-16 sm:py-24 bg-[#44332C] text-white">
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-[850px] mb-12 sm:mb-16">
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-black tracking-[-0.035em] text-white leading-[1.08] uppercase">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white leading-[1.12]">
             Hear from past students
           </h2>
 
@@ -57,7 +57,7 @@ export default function VideoWallSection() {
               key={idx}
               className="rounded-2xl sm:rounded-3xl bg-[#E1D5CB] p-4 text-[#1F1E1E] flex flex-col justify-between shadow-lg"
             >
-              <h3 className="text-sm sm:text-base font-bold text-[#1F1E1E] tracking-tight leading-snug mb-3">
+              <h3 className="text-sm sm:text-base font-semibold text-[#1F1E1E] tracking-tight leading-snug mb-3">
                 {item.title}
               </h3>
 

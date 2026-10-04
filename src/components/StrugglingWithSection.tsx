@@ -2,7 +2,6 @@
 
 import React from "react";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
 import { courseData } from "@/content/paritosh";
 
 export default function StrugglingWithSection() {
@@ -46,7 +45,7 @@ export default function StrugglingWithSection() {
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-[850px] mb-12 sm:mb-16">
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-black tracking-[-0.035em] text-[#1F1E1E] leading-[1.08] uppercase">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#1F1E1E] leading-[1.12] uppercase">
             Speaking up can sometimes feel like you're fighting an internal panic button
           </h2>
 
@@ -54,7 +53,7 @@ export default function StrugglingWithSection() {
             “But there is a reason why some people speak with calm gravitas, hold attention in every room, and never freeze. It's all about building the right speech mechanics and frameworks.”
           </p>
 
-          <p className="mt-8 text-xs font-mono font-bold uppercase tracking-widest text-[#8C6D58]">
+          <p className="mt-8 text-xs font-mono font-semibold uppercase tracking-widest text-[#8C6D58]">
             We know what you're struggling with...
           </p>
         </div>
@@ -67,7 +66,7 @@ export default function StrugglingWithSection() {
               className="p-6 sm:p-7 rounded-2xl sm:rounded-3xl bg-white border border-[#E5E7EB] shadow-[0_1px_3px_rgba(0,0,0,0.02)] flex flex-col justify-between"
             >
               <div>
-                <h3 className="text-base sm:text-lg font-black text-[#1F1E1E] tracking-tight leading-snug">
+                <h3 className="text-base sm:text-lg font-semibold text-[#1F1E1E] tracking-tight leading-snug">
                   {card.quote}
                 </h3>
                 <p className="mt-2.5 text-xs sm:text-sm text-[#4B5563] leading-relaxed font-normal">
@@ -76,8 +75,8 @@ export default function StrugglingWithSection() {
               </div>
 
               <div className="mt-6 pt-4 border-t border-[#F3F4F6]">
-                <span className="text-[10px] font-mono font-bold tracking-widest text-gold-700 uppercase block mb-1">
-                  ‍INSIDE INTROVERT TO ICON:
+                <span className="text-[10px] font-mono font-semibold tracking-widest text-[#8C6D58] uppercase block mb-1">
+                  INSIDE INTROVERT TO ICON:
                 </span>
                 <p className="text-xs sm:text-sm font-medium text-[#1F1E1E] leading-relaxed">
                   {card.inside}
@@ -89,19 +88,18 @@ export default function StrugglingWithSection() {
 
         {/* Kicker & Action */}
         <div className="mt-14 sm:mt-16 text-center flex flex-col items-center">
-          <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#5D3C23]">
+          <span className="text-xs font-mono font-semibold uppercase tracking-widest text-[#5D3C23]">
             Learn. Execute. Speak.
           </span>
-          <h3 className="text-xl sm:text-2xl font-black text-[#1F1E1E] mt-1">
+          <h3 className="text-xl sm:text-2xl font-bold text-[#1F1E1E] mt-1">
             Make 2026 the year you finally invest in yourself and speak with power!
           </h3>
 
           <Link
             href={checkoutUrl}
-            className="mt-6 inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#0D0906] hover:bg-black text-white text-xs sm:text-sm font-bold tracking-wide transition-all shadow-sm active:scale-95"
+            className="mt-6 w-[280px] sm:w-[320px] h-[60px] inline-flex items-center justify-center rounded-full bg-[#0D0906] hover:opacity-85 text-white font-semibold text-base tracking-wide transition-all duration-300 active:scale-[0.98]"
           >
             <span>JOIN INTROVERT TO ICON</span>
-            <ArrowUpRight className="w-4 h-4 text-gold-400" />
           </Link>
         </div>
       </div>

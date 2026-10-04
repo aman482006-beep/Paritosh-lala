@@ -17,7 +17,7 @@ export default function FinalCTA() {
         </div>
 
         {/* Giant Editorial Headline */}
-        <h2 className="max-w-[960px] text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-[-0.035em] text-[#1F1E1E] leading-[1.04] uppercase">
+        <h2 className="max-w-[960px] text-3xl sm:text-5xl md:text-6xl lg:text-[64px] font-bold tracking-tight text-[#1F1E1E] leading-[1.08]">
           Speak with confidence. Tell better stories. Become unforgettable.
         </h2>
 
@@ -30,10 +30,9 @@ export default function FinalCTA() {
         <div className="mt-8 sm:mt-10 flex flex-col items-center">
           <Link
             href={checkoutUrl}
-            className="w-full sm:w-[320px] h-[58px] sm:h-[62px] inline-flex items-center justify-center gap-2.5 rounded-full bg-[#0D0906] hover:bg-black text-white font-bold text-sm sm:text-base tracking-wide transition-all shadow-md active:scale-95"
+            className="w-[280px] sm:w-[320px] h-[60px] inline-flex items-center justify-center rounded-full bg-[#0D0906] hover:opacity-85 text-white font-semibold text-base tracking-wide transition-all duration-300 active:scale-[0.98] shadow-sm"
           >
-            <span>GET INSTANT ACCESS</span>
-            <ArrowUpRight className="w-4 h-4 text-gold-400" />
+            GET INSTANT ACCESS
           </Link>
 
           <div className="mt-4 flex items-center justify-center gap-1.5 text-xs font-mono text-[#6B7280]">

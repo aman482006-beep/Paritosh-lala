@@ -66,7 +66,7 @@ export default function RoadmapRoadmapSection() {
     <section className="py-16 sm:py-24 bg-[#FBF6F4] text-[#1F1E1E]">
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
         {/* Header */}
-        <h2 className="max-w-[900px] text-2xl sm:text-4xl md:text-5xl font-black tracking-[-0.035em] text-[#1F1E1E] leading-[1.08] uppercase">
+        <h2 className="max-w-[900px] text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#1F1E1E] leading-[1.12]">
           What your 30 days will look like
         </h2>
 
@@ -85,7 +85,7 @@ export default function RoadmapRoadmapSection() {
                 <span className="text-[11px] font-mono font-bold tracking-widest text-gold-400 uppercase block mb-2">
                   PHASE 0{idx + 1}
                 </span>
-                <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+                <h3 className="text-xl sm:text-2xl font-semibold text-white tracking-tight">
                   {card.title}
                 </h3>
                 <p className="mt-2 text-xs sm:text-sm text-neutral-300 leading-relaxed font-normal">
@@ -109,16 +109,15 @@ export default function RoadmapRoadmapSection() {
         <div className="mt-10 sm:mt-12">
           <Link
             href={checkoutUrl}
-            className="w-full sm:w-[320px] h-[58px] sm:h-[62px] inline-flex items-center justify-center gap-2.5 rounded-full bg-[#0D0906] hover:bg-black text-white font-bold text-sm sm:text-base tracking-wide transition-all shadow-md active:scale-95"
+            className="w-[280px] sm:w-[320px] h-[60px] inline-flex items-center justify-center rounded-full bg-[#0D0906] hover:opacity-85 text-white font-semibold text-base tracking-wide transition-all duration-300 active:scale-[0.98] shadow-sm"
           >
-            <span>GET INSTANT ACCESS</span>
-            <ArrowUpRight className="w-4 h-4 text-gold-400" />
+            GET INSTANT ACCESS
           </Link>
         </div>
 
         {/* Sub-quote & 3 Stats */}
         <div className="w-full mt-14 sm:mt-18 pt-12 border-t border-[#E5E7EB]">
-          <blockquote className="max-w-[850px] mx-auto text-lg sm:text-2xl font-black text-[#1F1E1E] leading-snug">
+          <blockquote className="max-w-[850px] mx-auto text-lg sm:text-2xl font-semibold text-[#1F1E1E] leading-snug">
             “If you have the right communication frameworks, there's no way you won't command respect in any room you walk into.”
           </blockquote>
 
@@ -128,7 +127,7 @@ export default function RoadmapRoadmapSection() {
                 key={idx}
                 className="p-6 rounded-2xl bg-white border border-[#E5E7EB] shadow-[0_1px_3px_rgba(0,0,0,0.02)]"
               >
-                <span className="text-xl sm:text-2xl font-black text-[#57423A] tracking-tight block">
+                <span className="text-xl sm:text-2xl font-semibold text-[#57423A] tracking-tight block">
                   {item.value}
                 </span>
                 <span className="text-xs text-[#4B5563] leading-relaxed mt-1 block">

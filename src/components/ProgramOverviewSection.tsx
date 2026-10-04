@@ -35,7 +35,7 @@ export default function ProgramOverviewSection() {
         </div>
 
         {/* Headline */}
-        <h2 className="max-w-[960px] text-2xl sm:text-4xl md:text-5xl lg:text-[52px] font-black tracking-[-0.035em] text-[#1F1E1E] leading-[1.06] uppercase">
+        <h2 className="max-w-[960px] text-2xl sm:text-4xl md:text-5xl lg:text-[52px] font-bold tracking-tight text-[#1F1E1E] leading-[1.12]">
           Practical communication mastery for thinkers who want to be heard
         </h2>
 
@@ -51,11 +51,11 @@ export default function ProgramOverviewSection() {
               key={idx}
               className="p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-white border border-[#E5E7EB] shadow-[0_1px_3px_rgba(0,0,0,0.02)] flex flex-col sm:flex-row gap-4 sm:gap-6 items-start"
             >
-              <span className="text-2xl sm:text-3xl font-black text-[#57423A] shrink-0 font-mono">
+              <span className="text-2xl sm:text-3xl font-bold text-[#57423A] shrink-0 font-mono">
                 {point.num}
               </span>
               <div>
-                <h3 className="text-lg sm:text-xl font-black text-[#1F1E1E] tracking-tight">
+                <h3 className="text-lg sm:text-xl font-semibold text-[#1F1E1E] tracking-tight">
                   {point.title}
                 </h3>
                 <p className="mt-2 text-xs sm:text-sm text-[#4B5563] leading-relaxed font-normal">
@@ -70,10 +70,9 @@ export default function ProgramOverviewSection() {
         <div className="mt-10 sm:mt-12">
           <Link
             href={checkoutUrl}
-            className="w-full sm:w-[320px] h-[58px] sm:h-[62px] inline-flex items-center justify-center gap-2.5 rounded-full bg-[#0D0906] hover:bg-black text-white font-bold text-sm sm:text-base tracking-wide transition-all shadow-md active:scale-95"
+            className="w-[280px] sm:w-[320px] h-[60px] inline-flex items-center justify-center rounded-full bg-[#0D0906] hover:opacity-85 text-white font-semibold text-base tracking-wide transition-all duration-300 active:scale-[0.98] shadow-sm"
           >
-            <span>JOIN INTROVERT TO ICON</span>
-            <ArrowUpRight className="w-4 h-4 text-gold-400" />
+            JOIN INTROVERT TO ICON
           </Link>
         </div>
       </div>

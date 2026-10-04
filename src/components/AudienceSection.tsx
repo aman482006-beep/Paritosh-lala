@@ -25,7 +25,7 @@ export default function AudienceSection() {
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header matching Creator College Section 15 */}
         <div className="max-w-[850px] mb-12 sm:mb-16">
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-black tracking-[-0.035em] text-[#1F1E1E] leading-[1.08] uppercase">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#1F1E1E] leading-[1.12]">
             2026 is the year you finally speak with clarity and confidence
           </h2>
           <p className="mt-4 text-base sm:text-lg text-[#5D3C23] font-normal leading-relaxed">
@@ -41,7 +41,7 @@ export default function AudienceSection() {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-50 text-rose-700 text-xs font-mono font-bold uppercase tracking-wider mb-4 border border-rose-200">
                 <span>NOT FOR YOU IF...</span>
               </div>
-              <h3 className="text-xl sm:text-2xl font-black text-[#1F1E1E] tracking-tight mb-6">
+              <h3 className="text-xl sm:text-2xl font-semibold text-[#1F1E1E] tracking-tight mb-6">
                 This program is not a fit if:
               </h3>
 
@@ -68,7 +68,7 @@ export default function AudienceSection() {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-mono font-bold uppercase tracking-wider mb-4 border border-emerald-200">
                 <span>PERFECT FIT IF...</span>
               </div>
-              <h3 className="text-xl sm:text-2xl font-black text-[#1F1E1E] tracking-tight mb-6">
+              <h3 className="text-xl sm:text-2xl font-semibold text-[#1F1E1E] tracking-tight mb-6">
                 This program is built for you if:
               </h3>
 

@@ -22,7 +22,7 @@ export default function CurriculumSection() {
             <span>{curriculum.eyebrow}</span>
           </div>
 
-          <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-[-0.035em] text-[#1F1E1E] leading-[1.05]">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#1F1E1E] leading-[1.12]">
             {curriculum.headline}
           </h2>
 
@@ -62,7 +62,7 @@ export default function CurriculumSection() {
                     )}
                   </div>
 
-                  <h3 className="text-lg sm:text-xl font-black text-[#1F1E1E] tracking-tight">
+                  <h3 className="text-lg sm:text-xl font-semibold text-[#1F1E1E] tracking-tight">
                     {module.title}
                   </h3>
 
@@ -116,10 +116,9 @@ export default function CurriculumSection() {
           </p>
           <Link
             href={checkoutUrl}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#1F1E1E] hover:bg-black text-white text-xs sm:text-sm font-bold tracking-wide transition-all shadow-sm active:scale-95"
+            className="w-[280px] sm:w-[320px] h-[60px] inline-flex items-center justify-center rounded-full bg-[#0D0906] hover:opacity-85 text-white font-semibold text-base tracking-wide transition-all duration-300 active:scale-[0.98] shadow-sm"
           >
-            <span>JOIN INTROVERT TO ICON</span>
-            <ArrowUpRight className="w-4 h-4 text-gold-400" />
+            JOIN INTROVERT TO ICON
           </Link>
         </div>
       </div>

@@ -3,8 +3,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, Sparkles } from "lucide-react";
 import { courseData } from "@/content/paritosh";
+import { assetPath } from "@/lib/utils";
 import VideoEmbed from "./VideoEmbed";
 
 export default function CreatorCollegeHero() {
@@ -19,8 +19,8 @@ export default function CreatorCollegeHero() {
           <span>OFFICIAL ENROLLMENT OPEN • INTROVERT TO ICON</span>
         </div>
 
-        {/* Centered Large Editorial Headline */}
-        <h1 className="max-w-[960px] text-3xl sm:text-5xl md:text-6xl lg:text-[68px] font-black tracking-[-0.035em] text-[#1F1E1E] leading-[1.03] uppercase">
+        {/* Centered Large Editorial Headline (Creator College 4xl-heading: text-6xl font-bold) */}
+        <h1 className="max-w-[960px] text-3xl sm:text-5xl md:text-6xl lg:text-[64px] font-bold tracking-tight text-[#1F1E1E] leading-[1.08] uppercase">
           SPEAK WITH CONFIDENCE, MASTER STORYTELLING AND EXPRESS WHO YOU ARE
         </h1>
 
@@ -29,7 +29,7 @@ export default function CreatorCollegeHero() {
           Join the comprehensive communication and public-speaking program by Paritosh Anand to speak clearly, tell captivating stories, build unshakeable confidence, and become unforgettable. Designed for quiet thinkers who want substance over noise.
         </p>
 
-        {/* Centered 16:9 Video Container (800px max width matching Creator College) */}
+        {/* Centered 16:9 Video Container */}
         <div className="w-full max-w-[840px] mt-8 sm:mt-10 p-2 sm:p-3 rounded-2xl sm:rounded-3xl bg-white border border-[#E5E7EB] shadow-[0_4px_24px_rgba(0,0,0,0.04)]">
           <VideoEmbed
             videoUrl={hero.videoUrl}
@@ -45,14 +45,13 @@ export default function CreatorCollegeHero() {
           />
         </div>
 
-        {/* Centered Primary CTA Button */}
+        {/* Centered Primary CTA Button (Exact Creator College Button Style: 320x60px, rounded-full, font-semibold text-base) */}
         <div className="mt-8 sm:mt-10 w-full flex flex-col items-center">
           <Link
             href={checkoutUrl}
-            className="w-full sm:w-[320px] h-[58px] sm:h-[62px] inline-flex items-center justify-center gap-2.5 rounded-full bg-[#0D0906] hover:bg-black text-white font-bold text-sm sm:text-base tracking-wide transition-all shadow-md active:scale-95"
+            className="w-[280px] sm:w-[320px] h-[60px] inline-flex items-center justify-center rounded-full bg-[#0D0906] hover:opacity-85 text-white font-semibold text-base tracking-wide transition-all duration-300 shadow-none active:scale-[0.98]"
           >
             <span>GET INSTANT ACCESS</span>
-            <ArrowUpRight className="w-4 h-4 text-gold-400" />
           </Link>
 
           <p className="mt-3 text-xs font-mono text-[#6B7280]">
@@ -60,7 +59,7 @@ export default function CreatorCollegeHero() {
           </p>
         </div>
 
-        {/* Dual Authority Cards Side-by-Side (Creator College S2 bottom cards) */}
+        {/* Dual Authority Cards Side-by-Side */}
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mt-14 sm:mt-20 text-left">
           {/* Card 1: Storyteller & Public Speaker */}
           <div className="p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-[#0D0906] text-white flex flex-col justify-between shadow-md">
@@ -68,14 +67,14 @@ export default function CreatorCollegeHero() {
               <div className="flex items-center gap-3.5 mb-4">
                 <div className="relative w-12 h-12 rounded-full overflow-hidden border border-white/20 shrink-0">
                   <Image
-                    src="/images/paritosh-portrait.webp"
+                    src={assetPath("/images/paritosh-portrait.webp")}
                     alt="Paritosh Anand"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div>
-                  <h3 className="text-base sm:text-lg font-bold text-white tracking-tight leading-snug">
+                  <h3 className="text-base sm:text-lg font-semibold text-white tracking-tight leading-snug">
                     Paritosh Anand, Storyteller &amp; Speaker
                   </h3>
                   <span className="text-xs text-gold-400 font-mono">
@@ -95,7 +94,7 @@ export default function CreatorCollegeHero() {
 
             <div className="mt-6 pt-4 border-t border-neutral-800 flex items-center justify-between text-xs font-mono">
               <span className="text-neutral-400">AUDIENCE REACH</span>
-              <span className="text-white font-bold">1.5M+</span>
+              <span className="text-white font-semibold">1.5M+</span>
             </div>
           </div>
 
@@ -105,14 +104,14 @@ export default function CreatorCollegeHero() {
               <div className="flex items-center gap-3.5 mb-4">
                 <div className="relative w-12 h-12 rounded-full overflow-hidden border border-white/20 shrink-0">
                   <Image
-                    src="/images/paritosh-speaking.webp"
+                    src={assetPath("/images/paritosh-speaking.webp")}
                     alt="Paritosh Anand"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div>
-                  <h3 className="text-base sm:text-lg font-bold text-white tracking-tight leading-snug">
+                  <h3 className="text-base sm:text-lg font-semibold text-white tracking-tight leading-snug">
                     Founder, We Smile Media
                   </h3>
                   <span className="text-xs text-gold-400 font-mono">
@@ -132,7 +131,7 @@ export default function CreatorCollegeHero() {
 
             <div className="mt-6 pt-4 border-t border-neutral-800 flex items-center justify-between text-xs font-mono">
               <span className="text-neutral-400">CREDENTIALS</span>
-              <span className="text-white font-bold">TEDx SPEAKER</span>
+              <span className="text-white font-semibold">TEDx SPEAKER</span>
             </div>
           </div>
         </div>

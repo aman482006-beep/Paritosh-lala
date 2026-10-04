@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import { assetPath } from "@/lib/utils";
 
 export default function PersonaUseCases() {
   const personas = [
@@ -11,7 +12,7 @@ export default function PersonaUseCases() {
       name: "Makenzie Conklin",
       handle: "@makenzie_dev",
       role: "Senior Systems Engineer · 51k followers",
-      image: "/images/testimonial-01.webp",
+      image: assetPath("/images/testimonial-01.webp"),
     },
     {
       title: "“I’m a founder, I want to pitch investors and lead all-hands meetings”",
@@ -19,7 +20,7 @@ export default function PersonaUseCases() {
       name: "Kate Tan",
       handle: "@hellokatetan",
       role: "Fintech Co-Founder · 30K followers",
-      image: "/images/testimonial-02.webp",
+      image: assetPath("/images/testimonial-02.webp"),
     },
     {
       title: "“I’m a creator, I want to speak naturally on camera without freezing”",
@@ -27,7 +28,7 @@ export default function PersonaUseCases() {
       name: "Hannah Explains",
       handle: "@hannahexplainsit",
       role: "Educational Creator · 75.7K followers",
-      image: "/images/testimonial-01.webp",
+      image: assetPath("/images/testimonial-01.webp"),
     },
     {
       title: "“I’m a consultant, I want clients to respect my recommendations”",
@@ -35,7 +36,7 @@ export default function PersonaUseCases() {
       name: "Michael Chen",
       handle: "@coachmichael",
       role: "Strategy & Advisory · 65.8k followers",
-      image: "/images/testimonial-02.webp",
+      image: assetPath("/images/testimonial-02.webp"),
     },
   ];
 
@@ -43,7 +44,7 @@ export default function PersonaUseCases() {
     <section className="py-16 sm:py-24 bg-[#F1F1F1] text-[#1F1E1E]">
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-[850px] mb-10 sm:mb-14">
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-black tracking-[-0.035em] text-[#1F1E1E] leading-[1.08] uppercase">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#1F1E1E] leading-[1.12]">
             “I’m a professional, I want to communicate ideas that move people to action”
           </h2>
 
@@ -59,7 +60,7 @@ export default function PersonaUseCases() {
               className="p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-[#FBF6F4] border border-[#E5E7EB] shadow-[0_1px_3px_rgba(0,0,0,0.02)] flex flex-col justify-between"
             >
               <div>
-                <h3 className="text-base sm:text-lg font-black text-[#1F1E1E] leading-snug tracking-tight">
+                <h3 className="text-base sm:text-lg font-semibold text-[#1F1E1E] leading-snug tracking-tight">
                   {p.title}
                 </h3>
                 <p className="mt-3 text-xs sm:text-sm text-[#4B5563] leading-relaxed font-normal italic">
@@ -77,7 +78,7 @@ export default function PersonaUseCases() {
                   />
                 </div>
                 <div>
-                  <h4 className="text-xs sm:text-sm font-bold text-[#1F1E1E]">
+                  <h4 className="text-xs sm:text-sm font-semibold text-[#1F1E1E]">
                     {p.name}
                   </h4>
                   <p className="text-[11px] font-mono text-[#6B7280]">

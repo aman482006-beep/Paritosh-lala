@@ -23,7 +23,7 @@ export default function FAQSection() {
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header matching Creator College Section 19 */}
         <div className="max-w-[850px] mb-12 sm:mb-16">
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-black tracking-[-0.035em] text-[#1F1E1E] leading-[1.08] uppercase">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#1F1E1E] leading-[1.12]">
             Frequently asked questions
           </h2>
           <p className="mt-4 text-base sm:text-lg text-[#5D3C23] font-normal leading-relaxed">
@@ -46,7 +46,7 @@ export default function FAQSection() {
                   aria-expanded={isOpen}
                   className="w-full flex items-center justify-between p-5 sm:p-6 text-left focus:outline-none"
                 >
-                  <span className="text-sm sm:text-base md:text-lg font-bold text-[#1F1E1E] tracking-tight pr-4">
+                  <span className="text-sm sm:text-base md:text-lg font-semibold text-[#1F1E1E] tracking-tight pr-4">
                     {faq.question}
                   </span>
                   <div

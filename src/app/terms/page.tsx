@@ -19,7 +19,7 @@ export default function TermsPage() {
           <span>BACK TO HOME</span>
         </Link>
 
-        <h1 className="text-3xl sm:text-5xl font-black tracking-tight text-charcoal-900 mb-6">
+        <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-charcoal-900 mb-6">
           Terms &amp; Conditions
         </h1>
 

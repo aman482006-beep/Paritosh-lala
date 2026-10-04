@@ -21,7 +21,7 @@ export default function OutcomeWall() {
           REAL RESULTS
         </span>
 
-        <h2 className="text-2xl sm:text-4xl md:text-5xl font-black tracking-[-0.035em] text-[#1F1E1E] leading-tight uppercase">
+        <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#1F1E1E] leading-[1.12]">
           Real Quiet Thinkers, Real Conversational Growth
         </h2>
 
@@ -36,7 +36,7 @@ export default function OutcomeWall() {
               key={idx}
               className="p-5 sm:p-6 rounded-2xl bg-white border border-[#E5E7EB] shadow-[0_1px_3px_rgba(0,0,0,0.02)] flex flex-col justify-between"
             >
-              <h3 className="text-sm sm:text-base font-black text-[#1F1E1E] tracking-tight leading-snug">
+              <h3 className="text-sm sm:text-base font-semibold text-[#1F1E1E] tracking-tight leading-snug">
                 {item.title}
               </h3>
               <div className="mt-4 pt-3 border-t border-[#F3F4F6]">

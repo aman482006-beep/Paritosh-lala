@@ -19,7 +19,7 @@ export default function Footer() {
                 <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-white text-[#0D0906] font-bold text-xs tracking-wider">
                   PA
                 </span>
-                <span className="text-sm font-black tracking-tight text-white">
+                <span className="text-sm font-bold tracking-tight text-white">
                   {brand.name}
                 </span>
               </div>
@@ -163,10 +163,9 @@ export default function Footer() {
 
             <Link
               href={checkoutUrl}
-              className="inline-flex items-center justify-center gap-1.5 py-2.5 px-4 rounded-full bg-white hover:bg-neutral-100 text-[#0D0906] font-bold text-xs tracking-wider transition-colors shadow-sm"
+              className="h-[46px] px-6 inline-flex items-center justify-center rounded-full bg-white hover:bg-neutral-100 text-[#0D0906] font-semibold text-xs tracking-wider transition-all duration-300 active:scale-[0.98] shadow-sm"
             >
-              <span>GO TO CHECKOUT</span>
-              <ArrowUpRight className="w-3.5 h-3.5 text-[#0D0906]" />
+              GO TO CHECKOUT
             </Link>
           </div>
         </div>

@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { courseData } from "@/content/paritosh";
+import { assetPath } from "@/lib/utils";
 
 export default function HowIsThisDifferentSection() {
   const reviewsDifferent = [
@@ -11,28 +11,28 @@ export default function HowIsThisDifferentSection() {
       name: "Alexandria Maria",
       role: "Engineering Lead",
       handle: "@alexandria.m",
-      image: "/images/testimonial-01.webp",
+      image: assetPath("/images/testimonial-01.webp"),
     },
     {
       quote: "“Most public speaking courses teach you to be loud and fake an extroverted personality. Paritosh teaches you to speak with calm stillness and downward inflection. You leave this course with your presence completely transformed.”",
       name: "Peter Barry",
       role: "Product Manager",
       handle: "@peterbarry_pm",
-      image: "/images/testimonial-02.webp",
+      image: assetPath("/images/testimonial-02.webp"),
     },
     {
       quote: "“The Record & Review framework changed everything. Muting my practice video showed me I was swaying and fidgeting. Fixing that single habit made me look twice as authoritative immediately.”",
       name: "Ana Mitchell",
       role: "Design Director",
       handle: "@anamitchell",
-      image: "/images/testimonial-01.webp",
+      image: assetPath("/images/testimonial-01.webp"),
     },
     {
       quote: "“The best money I have ever spent on personal growth. The 3-Act storytelling framework makes dinner conversations, team catchups, and presentation hooks feel completely natural.”",
       name: "Matyas Speakeasy",
       role: "Founder & Creator",
       handle: "@matyas.speaks",
-      image: "/images/testimonial-02.webp",
+      image: assetPath("/images/testimonial-02.webp"),
     },
   ];
 
@@ -42,28 +42,28 @@ export default function HowIsThisDifferentSection() {
       name: "Alyssa Bonner",
       role: "Management Consultant",
       handle: "@alyssabonner",
-      image: "/images/testimonial-01.webp",
+      image: assetPath("/images/testimonial-01.webp"),
     },
     {
       quote: "“Introvert To Icon gave me so much clarity and focus. The self-paced modules are bite-sized, direct, and zero fluff. You can absorb a framework in 10 minutes and use it immediately.”",
       name: "Kricket Speegle",
       role: "Senior Director of Ops",
       handle: "@kricketspeegle",
-      image: "/images/testimonial-02.webp",
+      image: assetPath("/images/testimonial-02.webp"),
     },
     {
       quote: "“Even with a full-time job and a busy family schedule, I managed to complete the core drills in 15 minutes a day. My manager commented on my improved clarity within 3 weeks.”",
       name: "Shalini Mehra",
       role: "Senior Finance Analyst",
       handle: "@shalini_mehra",
-      image: "/images/testimonial-01.webp",
+      image: assetPath("/images/testimonial-01.webp"),
     },
     {
       quote: "“I got the exact blueprints I needed without any wasted theory. The 2-minute phone recordings take almost no time, but the compounding returns on your confidence are massive.”",
       name: "Nicole Klutse",
       role: "Tech Lead & Speaker",
       handle: "@nicoleklutse",
-      image: "/images/testimonial-02.webp",
+      image: assetPath("/images/testimonial-02.webp"),
     },
   ];
 
@@ -72,7 +72,7 @@ export default function HowIsThisDifferentSection() {
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Part 1: How is this different? */}
         <div className="max-w-[850px] mb-10 sm:mb-12">
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-black tracking-[-0.035em] text-[#1F1E1E] leading-[1.08] uppercase">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#1F1E1E] leading-[1.12]">
             “I’ve taken other courses — how is this different?”
           </h2>
           <p className="mt-4 text-base sm:text-lg text-[#5D3C23] font-normal leading-relaxed">
@@ -100,7 +100,7 @@ export default function HowIsThisDifferentSection() {
                   />
                 </div>
                 <div>
-                  <h4 className="text-xs sm:text-sm font-bold text-[#1F1E1E]">
+                  <h4 className="text-xs sm:text-sm font-semibold text-[#1F1E1E]">
                     {r.name}
                   </h4>
                   <p className="text-[11px] font-mono text-[#6B7280]">
@@ -114,7 +114,7 @@ export default function HowIsThisDifferentSection() {
 
         {/* Part 2: Will I be able to fit this into my schedule? (Creator College S16 second block) */}
         <div className="max-w-[850px] mb-10 sm:mb-12 pt-8 border-t border-[#E5E7EB]">
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-black tracking-[-0.035em] text-[#1F1E1E] leading-[1.08] uppercase">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#1F1E1E] leading-[1.12]">
             “I’m very busy, will I be able to fit this into my schedule?”
           </h2>
           <p className="mt-4 text-base sm:text-lg text-[#5D3C23] font-normal leading-relaxed">
@@ -142,7 +142,7 @@ export default function HowIsThisDifferentSection() {
                   />
                 </div>
                 <div>
-                  <h4 className="text-xs sm:text-sm font-bold text-[#1F1E1E]">
+                  <h4 className="text-xs sm:text-sm font-semibold text-[#1F1E1E]">
                     {r.name}
                   </h4>
                   <p className="text-[11px] font-mono text-[#6B7280]">

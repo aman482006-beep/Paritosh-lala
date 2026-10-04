@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { courseData } from "@/content/paritosh";
+import { assetPath } from "@/lib/utils";
 
 export default function FounderStory() {
   const { timeline } = courseData;
@@ -16,7 +17,7 @@ export default function FounderStory() {
             <span>{timeline.eyebrow}</span>
           </div>
 
-          <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-[-0.035em] text-[#1F1E1E] leading-[1.05]">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#1F1E1E] leading-[1.12]">
             {timeline.headline}
           </h2>
 
@@ -45,7 +46,7 @@ export default function FounderStory() {
                     </span>
                   </div>
 
-                  <h3 className="text-base sm:text-lg font-black text-[#1F1E1E] tracking-tight">
+                  <h3 className="text-base sm:text-lg font-semibold text-[#1F1E1E] tracking-tight">
                     {milestone.title}
                   </h3>
 
@@ -67,7 +68,7 @@ export default function FounderStory() {
             <div className="p-2 sm:p-2.5 rounded-3xl bg-white border border-[#E5E7EB] shadow-sm">
               <div className="relative aspect-[16/10] w-full rounded-2xl overflow-hidden bg-neutral-900">
                 <Image
-                  src="/images/paritosh-speaking.webp"
+                  src={assetPath("/images/paritosh-speaking.webp")}
                   alt="Paritosh Anand public speaking on stage"
                   fill
                   sizes="(max-width: 1024px) 100vw, 40vw"

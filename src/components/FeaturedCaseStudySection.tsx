@@ -26,7 +26,7 @@ export default function FeaturedCaseStudySection() {
           <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#8C6D58] block mb-4">
             FEATURED STUDENT BREAKTHROUGH
           </span>
-          <blockquote className="text-2xl sm:text-4xl md:text-5xl font-black tracking-[-0.035em] text-[#1F1E1E] leading-[1.12]">
+          <blockquote className="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#1F1E1E] leading-[1.12]">
             “I spent 4 years freezing in executive meetings and avoiding keynotes. Within 6 weeks of Introvert To Icon, I led our global all-hands keynote with total composure.”
           </blockquote>
           <p className="mt-5 text-sm sm:text-base font-mono text-[#5D3C23]">
@@ -42,7 +42,7 @@ export default function FeaturedCaseStudySection() {
               className="p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-white border border-[#E5E7EB] shadow-[0_1px_3px_rgba(0,0,0,0.02)] flex flex-col justify-between"
             >
               <div>
-                <h3 className="text-xl sm:text-2xl font-black text-[#57423A] tracking-tight">
+                <h3 className="text-xl sm:text-2xl font-semibold text-[#57423A] tracking-tight">
                   {card.stat}
                 </h3>
                 <p className="mt-3 text-xs sm:text-sm text-[#4B5563] leading-relaxed font-normal">

@@ -12,3 +12,17 @@ export function extractYouTubeId(url: string | null | undefined): string | null 
   );
   return match ? match[1] : null;
 }
+
+export const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
+export function assetPath(path: string | null | undefined): string {
+  if (!path) return "";
+  if (path.startsWith("http://") || path.startsWith("https://") || path.startsWith("data:")) {
+    return path;
+  }
+  const cleanPath = path.startsWith("/") ? path : `/${path}`;
+  if (basePath && cleanPath.startsWith(basePath)) {
+    return cleanPath;
+  }
+  return `${basePath}${cleanPath}`;
+}

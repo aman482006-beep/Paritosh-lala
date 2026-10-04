@@ -82,10 +82,9 @@ export default function Navbar() {
           <div className="flex items-center gap-2.5 sm:gap-3">
             <Link
               href={courseData.checkoutUrl}
-              className="inline-flex items-center gap-1.5 px-4 py-2 sm:px-5 sm:py-2.5 rounded-full bg-[#1F1E1E] hover:bg-black text-white text-xs sm:text-sm font-bold tracking-wide transition-all shadow-sm active:scale-95"
+              className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-[#0D0906] hover:opacity-85 text-white text-xs sm:text-sm font-semibold tracking-wide transition-all duration-300 active:scale-[0.98]"
             >
               <span>GET ACCESS</span>
-              <ArrowUpRight className="w-3.5 h-3.5 text-gold-400" />
             </Link>
 
             {/* Mobile / Tablet Menu Trigger */}
@@ -105,10 +104,10 @@ export default function Navbar() {
         <div className="xl:hidden fixed inset-0 z-50 bg-[#F1F1EF]/98 backdrop-blur-2xl flex flex-col justify-between p-6 sm:p-10 animate-fadeIn">
           <div className="flex items-center justify-between pb-6 border-b border-[#E5E7EB]">
             <div className="flex items-center gap-2.5">
-              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#1F1E1E] text-white font-bold text-xs tracking-wider">
+              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#0D0906] text-white font-semibold text-xs tracking-wider">
                 PA
               </span>
-              <span className="text-sm font-black tracking-tight text-[#1F1E1E]">
+              <span className="text-sm font-bold tracking-tight text-[#1F1E1E]">
                 {courseData.brand.name}
               </span>
             </div>
@@ -128,7 +127,7 @@ export default function Navbar() {
                 key={link.label}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-2xl sm:text-3xl font-black tracking-tight text-[#1F1E1E] hover:text-gold-600 transition-colors py-1 flex items-center justify-between"
+                className="text-2xl sm:text-3xl font-bold tracking-tight text-[#1F1E1E] hover:text-[#5D3C23] transition-colors py-1 flex items-center justify-between"
               >
                 <span>{link.label}</span>
                 <ArrowUpRight className="w-5 h-5 text-[#9CA3AF]" />
@@ -140,10 +139,9 @@ export default function Navbar() {
             <Link
               href={courseData.checkoutUrl}
               onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center justify-center gap-2 w-full py-4 rounded-full bg-[#1F1E1E] text-white font-bold text-base shadow-sm active:scale-95 transition-transform"
+              className="flex items-center justify-center w-full h-[60px] rounded-full bg-[#0D0906] hover:opacity-85 text-white font-semibold text-base transition-all duration-300 active:scale-[0.98]"
             >
               <span>GET INSTANT ACCESS</span>
-              <ArrowUpRight className="w-4 h-4 text-gold-400" />
             </Link>
             <p className="text-center text-xs font-mono text-[#6B7280]">
               Official Introvert To Icon checkout portal

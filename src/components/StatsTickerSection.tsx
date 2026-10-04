@@ -17,8 +17,8 @@ export default function StatsTickerSection() {
   return (
     <section className="py-14 sm:py-20 bg-[#F1F1F1] border-t border-[#E5E7EB] text-[#1F1E1E]">
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
-        {/* Headline */}
-        <h2 className="max-w-[900px] text-2xl sm:text-4xl md:text-5xl font-black tracking-[-0.035em] text-[#1F1E1E] leading-[1.08] uppercase">
+        {/* Headline (Creator College 3xl-heading: text-5xl font-bold) */}
+        <h2 className="max-w-[900px] text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#1F1E1E] leading-[1.12] uppercase">
           I will teach you the exact frameworks I use to speak with calm authority and captivate audiences without shouting
         </h2>
 
@@ -30,7 +30,7 @@ export default function StatsTickerSection() {
                 key={idx}
                 className="p-5 rounded-2xl bg-white border border-[#E5E7EB] shadow-[0_1px_3px_rgba(0,0,0,0.02)] flex flex-col items-center justify-center text-center"
               >
-                <span className="text-2xl sm:text-3xl font-black text-[#57423A] tracking-tight">
+                <span className="text-2xl sm:text-3xl font-bold text-[#57423A] tracking-tight">
                   {item.count}
                 </span>
                 <span className="text-xs font-mono text-[#6B7280] mt-1 uppercase">
@@ -46,7 +46,7 @@ export default function StatsTickerSection() {
                 key={idx}
                 className="p-5 rounded-2xl bg-white border border-[#E5E7EB] shadow-[0_1px_3px_rgba(0,0,0,0.02)] flex flex-col items-center justify-center text-center"
               >
-                <span className="text-2xl sm:text-3xl font-black text-[#57423A] tracking-tight">
+                <span className="text-2xl sm:text-3xl font-bold text-[#57423A] tracking-tight">
                   {item.count}
                 </span>
                 <span className="text-xs font-mono text-[#6B7280] mt-1 uppercase">
@@ -59,7 +59,7 @@ export default function StatsTickerSection() {
 
         {/* Statement Box */}
         <div className="mt-12 sm:mt-16 max-w-[800px]">
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-black text-[#1F1E1E] tracking-tight leading-snug">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#1F1E1E] tracking-tight leading-snug">
             Stop overthinking conversations, speaking without structure, and feeling invisible in high-stakes rooms.
           </h3>
           <p className="mt-4 text-sm sm:text-base text-[#4B5563] leading-relaxed font-normal">

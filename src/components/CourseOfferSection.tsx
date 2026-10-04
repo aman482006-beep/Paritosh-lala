@@ -3,8 +3,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, Check, ShieldCheck, Zap } from "lucide-react";
+import { Check, ShieldCheck, Zap } from "lucide-react";
 import { courseData } from "@/content/paritosh";
+import { assetPath } from "@/lib/utils";
 
 export default function CourseOfferSection() {
   const { offer, checkoutUrl } = courseData;
@@ -18,7 +19,7 @@ export default function CourseOfferSection() {
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header matching Creator College Section 18 */}
         <div className="max-w-[850px] mb-12 sm:mb-16">
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-black tracking-[-0.035em] text-[#1F1E1E] leading-[1.08] uppercase">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#1F1E1E] leading-[1.12]">
             It’s time to focus on YOU and invest in your voice
           </h2>
           <p className="mt-4 text-base sm:text-lg text-[#5D3C23] font-normal leading-relaxed">
@@ -36,7 +37,7 @@ export default function CourseOfferSection() {
                   OFFICIAL ENROLLMENT · INTROVERT TO ICON
                 </span>
 
-                <h3 className="text-2xl sm:text-3xl font-black text-[#1F1E1E] tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-semibold text-[#1F1E1E] tracking-tight">
                   {offer.title}
                 </h3>
 
@@ -93,7 +94,7 @@ export default function CourseOfferSection() {
               <div>
                 <div className="relative aspect-[16/10] w-full rounded-xl overflow-hidden mb-6 border border-[#E5E7EB] bg-neutral-900 shadow-sm">
                   <Image
-                    src="/images/introvert-to-icon-cover.webp"
+                    src={assetPath("/images/introvert-to-icon-cover.webp")}
                     alt="Introvert To Icon official course cover"
                     fill
                     className="object-cover object-center"
@@ -108,7 +109,7 @@ export default function CourseOfferSection() {
                           {offer.originalPrice}
                         </span>
                       )}
-                      <span className="text-3xl font-black text-[#1F1E1E]">
+                      <span className="text-3xl font-bold text-[#1F1E1E]">
                         {offer.discountPrice || offer.coursePrice}
                       </span>
                       {offer.paymentPlan && (
@@ -131,10 +132,9 @@ export default function CourseOfferSection() {
 
                 <Link
                   href={checkoutUrl}
-                  className="w-full inline-flex items-center justify-center gap-2 py-4 rounded-full bg-[#0D0906] hover:bg-black text-white font-bold text-sm tracking-wide transition-all shadow-md active:scale-95"
+                  className="w-full h-[58px] inline-flex items-center justify-center rounded-full bg-[#0D0906] hover:opacity-85 text-white font-semibold text-base tracking-wide transition-all duration-300 active:scale-[0.98] shadow-sm"
                 >
-                  <span>GET INSTANT ACCESS</span>
-                  <ArrowUpRight className="w-4 h-4 text-gold-400" />
+                  GET INSTANT ACCESS
                 </Link>
 
                 <p className="mt-3 text-center text-xs font-mono text-[#6B7280]">
@@ -146,7 +146,7 @@ export default function CourseOfferSection() {
                   <div className="flex items-start gap-2">
                     <ShieldCheck className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" />
                     <div>
-                      <p className="text-xs font-bold text-[#1F1E1E] leading-tight">
+                      <p className="text-xs font-semibold text-[#1F1E1E] leading-tight">
                         100% Safe Purchase
                       </p>
                       <p className="text-[10px] text-[#6B7280] font-mono">
@@ -158,7 +158,7 @@ export default function CourseOfferSection() {
                   <div className="flex items-start gap-2">
                     <Zap className="w-4 h-4 text-gold-600 mt-0.5 shrink-0" />
                     <div>
-                      <p className="text-xs font-bold text-[#1F1E1E] leading-tight">
+                      <p className="text-xs font-semibold text-[#1F1E1E] leading-tight">
                         Instant Access
                       </p>
                       <p className="text-[10px] text-[#6B7280] font-mono">
