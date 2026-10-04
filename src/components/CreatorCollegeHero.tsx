@@ -130,36 +130,40 @@ export default function CreatorCollegeHero() {
                 </p>
               </div>
 
-              {/* Bottom Element: Official Social Vector Badges matching Reference Screenshot */}
-              <div className="mt-10 sm:mt-12 flex items-center justify-center gap-5 sm:gap-6 font-mono text-white">
+              {/* Bottom Element: Official Social Icon Badges matching Reference Screenshot */}
+              <div className="mt-10 sm:mt-12 flex items-center justify-center gap-6 sm:gap-8 font-mono text-white">
                 {/* Instagram Badge */}
-                <div className="flex items-center gap-2">
-                  <div className="w-6 h-6 rounded-lg bg-gradient-to-tr from-[#FFB900] via-[#E0033B] to-[#8D00C4] flex items-center justify-center p-1 text-white shadow-sm shrink-0">
-                    <svg className="w-full h-full" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-                    </svg>
+                <div className="flex items-center gap-2.5">
+                  <div className="relative w-7 h-7 sm:w-8 sm:h-8 rounded-xl overflow-hidden shadow-md shrink-0">
+                    <Image
+                      src={assetPath("/images/icon-instagram.png")}
+                      alt="Instagram"
+                      fill
+                      className="object-contain"
+                    />
                   </div>
-                  <span className="text-xs sm:text-sm font-semibold text-white tracking-tight">1.5M+</span>
+                  <span className="text-sm sm:text-base font-bold text-white tracking-tight">1.5M+</span>
                 </div>
 
                 {/* YouTube Badge */}
-                <div className="flex items-center gap-2">
-                  <div className="w-6 h-6 rounded-lg bg-[#FF0000] flex items-center justify-center p-1 text-white shadow-sm shrink-0">
-                    <svg className="w-full h-full fill-current" viewBox="0 0 24 24">
-                      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                    </svg>
+                <div className="flex items-center gap-2.5">
+                  <div className="relative w-7 h-7 sm:w-8 sm:h-8 rounded-xl overflow-hidden shadow-md shrink-0">
+                    <Image
+                      src={assetPath("/images/icon-youtube.png")}
+                      alt="YouTube"
+                      fill
+                      className="object-contain"
+                    />
                   </div>
-                  <span className="text-xs sm:text-sm font-semibold text-white tracking-tight">500K+</span>
+                  <span className="text-sm sm:text-base font-bold text-white tracking-tight">500K+</span>
                 </div>
 
                 {/* TEDx Badge */}
-                <div className="flex items-center gap-2">
-                  <div className="px-2 py-0.5 rounded bg-[#EB0028] text-white text-[11px] font-black font-sans tracking-tighter shrink-0 shadow-sm leading-none">
+                <div className="flex items-center gap-2.5">
+                  <div className="px-2.5 py-1.5 rounded-lg bg-[#EB0028] text-white text-xs font-black font-sans tracking-tighter shrink-0 shadow-md leading-none">
                     TEDx
                   </div>
-                  <span className="text-xs sm:text-sm font-semibold text-white tracking-tight">Speaker</span>
+                  <span className="text-sm sm:text-base font-bold text-white tracking-tight">Speaker</span>
                 </div>
               </div>
             </div>
