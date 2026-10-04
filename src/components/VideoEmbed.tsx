@@ -49,7 +49,7 @@ export default function VideoEmbed({
     return (
       <div
         className={cn(
-          "relative w-full overflow-hidden rounded-2xl md:rounded-3xl bg-charcoal-900 border border-charcoal-700/60 shadow-elevated",
+          "relative w-full overflow-hidden rounded-2xl md:rounded-3xl bg-black shadow-2xl border-0",
           aspectClass,
           className
         )}

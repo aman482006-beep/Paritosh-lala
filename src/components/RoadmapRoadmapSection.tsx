@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { ArrowUpRight, CheckCircle2 } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 import { courseData } from "@/content/paritosh";
 
 export default function RoadmapRoadmapSection() {
@@ -10,39 +10,39 @@ export default function RoadmapRoadmapSection() {
 
   const cards = [
     {
-      title: "Voice Calibration & Diaphragmatic Breath",
-      subtitle: "Eliminate tremors and ground your voice in physical resonance",
+      title: "Voice Calibration & Breath",
+      subtitle: "Eliminate tremors and ground your vocal resonance.",
       bullets: [
-        "Master the deep belly breath protocol before entering high-stakes meetings",
-        "Calibrate downward inflection so your statements project authority",
-        "Eliminate vocal fry, trailing sentences, and nervous throat clearing",
+        "Deep belly breathing to stop nervous shakes",
+        "Downward inflection for calm authority",
+        "Eradicate vocal fry and trailing sentences",
       ],
     },
     {
-      title: "Thought Structuring & The Story Spine",
-      subtitle: "Stop rambling and formulate ideas crisply before you speak",
+      title: "Thought Structuring & Stories",
+      subtitle: "Formulate ideas crisply before you speak.",
       bullets: [
-        "Deploy the 3-act narrative hook to grab attention in the first 7 seconds",
-        "Master conversational tennis to keep 1-on-1 chats flowing naturally",
-        "Use structured mental templates to answer unpredictable questions calmly",
+        "7-second hooks to capture attention instantly",
+        "Conversational tennis for natural 1-on-1 flow",
+        "Mental templates to answer tough questions calmly",
       ],
     },
     {
-      title: "The 'Record & Review' Speech Lab",
-      subtitle: "A private, self-correcting practice loop to diagnose blind spots",
+      title: "Record & Review Lab",
+      subtitle: "A private self-diagnostic practice method.",
       bullets: [
-        "Record 2-minute daily speech drills in the comfort of your own space",
-        "Audit micro-gestures, hand anchoring, eye contact, and verbal pauses",
-        "Measure undeniable week-over-week growth using structured rubrics",
+        "2-minute daily self-recording micro-drills",
+        "Audit hand gestures, eye contact, and pauses",
+        "Objective weekly progress tracking rubrics",
       ],
     },
     {
-      title: "Room Command & High-Stakes Presence",
-      subtitle: "Step onto stages, boardrooms, and social events with stillness",
+      title: "Room Command & Presence",
+      subtitle: "Step into meetings and stages with stillness.",
       bullets: [
-        "Own physical stillness to project calm, commanding gravitas",
-        "Connect with strangers and senior leaders without rehearsed awkwardness",
-        "Deliver presentations with emotional range, humor, and memorable takeaways",
+        "Stillness protocols for executive gravitas",
+        "Approach strangers and senior leaders naturally",
+        "Deliver presentations with lasting impact",
       ],
     },
   ];
@@ -50,52 +50,52 @@ export default function RoadmapRoadmapSection() {
   const bottomStats = [
     {
       value: "0 Filler Words",
-      desc: "Replaced 'um', 'uh', and throat clearing with purposeful pauses",
+      desc: "Purposeful pauses over nervous filler",
     },
     {
-      value: "15+ Rehearsals",
-      desc: "Completed self-paced drills in the Record & Review laboratory",
+      value: "15+ Micro-Drills",
+      desc: "Fast daily self-recording exercises",
     },
     {
       value: "100% Authentic",
-      desc: "Mastered expression without faking an extroverted personality",
+      desc: "Calm authority without fake extroversion",
     },
   ];
 
   return (
-    <section id="method" className="py-16 sm:py-24 bg-[#FBF6F4] text-[#1F1E1E]">
+    <section id="method" className="py-14 sm:py-20 bg-[#FBF6F4] text-[#1F1E1E]">
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
         {/* Header */}
-        <h2 className="max-w-[900px] text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#1F1E1E] leading-[1.12]">
+        <h2 className="max-w-[900px] text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-[#1F1E1E] leading-[1.15]">
           What your 30 days will look like
         </h2>
 
-        <p className="mt-4 sm:mt-5 max-w-[700px] text-base sm:text-lg text-[#5D3C23] font-normal leading-relaxed">
-          The step-by-step drills and frameworks you'll practice daily to rewire how you formulate thoughts and speak.
+        <p className="mt-3 max-w-[700px] text-sm sm:text-base text-[#5D3C23] font-normal leading-relaxed">
+          Daily micro-drills and repeatable frameworks to rewire how you formulate thoughts and speak.
         </p>
 
-        {/* 4 Dark Cards (#0D0906) in Creator College Section 13 style */}
-        <div className="w-full mt-12 sm:mt-16 grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 text-left">
+        {/* 4 Dark Cards */}
+        <div className="w-full mt-10 sm:mt-12 grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 text-left">
           {cards.map((card, idx) => (
             <div
               key={idx}
-              className="p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-[#0D0906] text-white flex flex-col justify-between shadow-xl"
+              className="p-5 sm:p-7 rounded-2xl bg-[#0D0906] text-white flex flex-col justify-between shadow-lg"
             >
               <div>
-                <span className="text-[11px] font-mono font-bold tracking-widest text-gold-400 uppercase block mb-2">
+                <span className="text-[10px] font-mono font-bold tracking-widest text-gold-400 uppercase block mb-1.5">
                   PHASE 0{idx + 1}
                 </span>
-                <h3 className="text-xl sm:text-2xl font-semibold text-white tracking-tight">
+                <h3 className="text-lg sm:text-xl font-bold text-white tracking-tight">
                   {card.title}
                 </h3>
-                <p className="mt-2 text-xs sm:text-sm text-neutral-300 leading-relaxed font-normal">
+                <p className="mt-1 text-xs sm:text-sm text-neutral-300 leading-relaxed font-normal">
                   {card.subtitle}
                 </p>
 
-                <div className="mt-6 space-y-3">
+                <div className="mt-4 space-y-2">
                   {card.bullets.map((b, bIdx) => (
-                    <div key={bIdx} className="flex items-start gap-2.5 text-xs sm:text-sm text-neutral-300">
-                      <CheckCircle2 className="w-4 h-4 text-gold-400 shrink-0 mt-0.5" />
+                    <div key={bIdx} className="flex items-start gap-2 text-xs sm:text-sm text-neutral-300">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-gold-400 shrink-0 mt-0.5" />
                       <span>{b}</span>
                     </div>
                   ))}
@@ -106,7 +106,7 @@ export default function RoadmapRoadmapSection() {
         </div>
 
         {/* CTA Button */}
-        <div className="mt-10 sm:mt-12">
+        <div className="mt-8 sm:mt-10">
           <Link
             href={checkoutUrl}
             className="w-[280px] sm:w-[320px] h-[60px] inline-flex items-center justify-center rounded-full bg-[#0D0906] hover:opacity-85 text-white font-semibold text-base tracking-wide transition-all duration-300 active:scale-[0.98] shadow-sm"
@@ -115,22 +115,18 @@ export default function RoadmapRoadmapSection() {
           </Link>
         </div>
 
-        {/* Sub-quote & 3 Stats */}
-        <div className="w-full mt-14 sm:mt-18 pt-12 border-t border-[#E5E7EB]">
-          <blockquote className="max-w-[850px] mx-auto text-lg sm:text-2xl font-semibold text-[#1F1E1E] leading-snug">
-            “If you have the right communication frameworks, there's no way you won't command respect in any room you walk into.”
-          </blockquote>
-
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 text-left">
+        {/* 3 Stats Strip */}
+        <div className="w-full mt-10 sm:mt-12 pt-8 border-t border-[#E5E7EB]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4 text-left">
             {bottomStats.map((item, idx) => (
               <div
                 key={idx}
-                className="p-6 rounded-2xl bg-white border border-[#E5E7EB] shadow-[0_1px_3px_rgba(0,0,0,0.02)]"
+                className="p-4 sm:p-5 rounded-2xl bg-white border border-[#E5E7EB] shadow-[0_1px_3px_rgba(0,0,0,0.02)]"
               >
-                <span className="text-xl sm:text-2xl font-semibold text-[#57423A] tracking-tight block">
+                <span className="text-lg sm:text-xl font-bold text-[#57423A] tracking-tight block">
                   {item.value}
                 </span>
-                <span className="text-xs text-[#4B5563] leading-relaxed mt-1 block">
+                <span className="text-xs text-[#4B5563] leading-relaxed mt-0.5 block">
                   {item.desc}
                 </span>
               </div>

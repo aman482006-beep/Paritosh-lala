@@ -14,7 +14,7 @@ export default function CurriculumSection() {
   };
 
   return (
-    <section id="curriculum" className="py-16 sm:py-24 lg:py-32 bg-[#F1F1EF]">
+    <section id="curriculum" className="py-14 sm:py-20 bg-[#F1F1EF]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-3xl mb-10 sm:mb-14">

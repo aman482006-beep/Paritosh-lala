@@ -9,7 +9,7 @@ export default function FinalCTA() {
   const { finalCta, checkoutUrl } = courseData;
 
   return (
-    <section className="py-20 sm:py-28 lg:py-36 bg-[#F1F1F1] text-[#1F1E1E] relative">
+    <section className="py-14 sm:py-20 bg-[#F1F1F1] text-[#1F1E1E] relative">
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 flex flex-col items-center">
         {/* Eyebrow */}
         <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-[#0D0906] text-white text-xs font-mono tracking-widest uppercase mb-6 sm:mb-8 shadow-sm">

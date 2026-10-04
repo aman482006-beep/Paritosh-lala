@@ -7,6 +7,8 @@ import { Check, ShieldCheck, Zap } from "lucide-react";
 import { courseData } from "@/content/paritosh";
 import { assetPath } from "@/lib/utils";
 
+import BrandLogo from "./BrandLogo";
+
 export default function CourseOfferSection() {
   const { offer, checkoutUrl } = courseData;
 
@@ -33,6 +35,9 @@ export default function CourseOfferSection() {
             {/* Left Column: Details & Feature Checklist */}
             <div className="lg:col-span-7 flex flex-col justify-between">
               <div>
+                <div className="mb-4">
+                  <BrandLogo variant="light" size="md" />
+                </div>
                 <span className="text-[11px] font-mono font-bold text-gold-700 tracking-widest uppercase block mb-2">
                   OFFICIAL ENROLLMENT · INTROVERT TO ICON
                 </span>

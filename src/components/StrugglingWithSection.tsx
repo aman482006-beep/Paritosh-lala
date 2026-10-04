@@ -9,78 +9,63 @@ export default function StrugglingWithSection() {
 
   const painCards = [
     {
-      quote: "“I never know what to say in high-pressure moments”",
-      desc: "You have deep thoughts in your head, but when the moment comes, they scramble and come out fragmented or rushed.",
-      inside: "You’ll learn thought structuring and rapid formulation frameworks so your words come out crisp, intentional, and compelling.",
+      quote: "“I never know what to say under pressure”",
+      desc: "Your thoughts scramble and come out rushed. You’ll master rapid thought structuring so your points land crisp, clear, and intentional.",
     },
     {
-      quote: "“I sound less confident than I actually feel”",
-      desc: "Your internal conviction gets lost in trailing voice, filler words, uptalk, and uncertain cadence.",
-      inside: "You’ll master downward inflection, vocal resonance, and cadence so you sound grounded and authoritative.",
+      quote: "“I sound less confident than I feel”",
+      desc: "Conviction gets lost in trailing voice and uptalk. You’ll calibrate downward inflection and vocal resonance so you speak with grounded authority.",
     },
     {
-      quote: "“I struggle to start conversations with strangers or senior leaders”",
-      desc: "Walking into a room of new people or approaching an executive feels overwhelming without a script.",
-      inside: "You’ll get frictionless, observation-based opening frameworks and conversational tennis mechanics that feel completely natural.",
+      quote: "“I struggle to approach senior leaders”",
+      desc: "Starting conversations feels intimidating without a script. You’ll get frictionless, observation-based frameworks that feel completely natural.",
     },
     {
-      quote: "“I know stories, but I don't know how to tell them”",
-      desc: "You recall great experiences, but when you recount them, people's eyes wander and the punchline falls flat.",
-      inside: "You’ll learn the 3-act retention hook and narrative tension arc used by top storytellers and creators.",
+      quote: "“I have stories, but struggle to tell them”",
+      desc: "Great experiences fall flat without pacing. You’ll learn the 3-act tension arc used by top storytellers to hold complete room attention.",
     },
     {
-      quote: "“I freeze while speaking in front of people”",
-      desc: "Boardrooms, seminars, or live crowds trigger an adrenaline spike that scrambles your vocabulary.",
-      inside: "You’ll practice adrenaline channeling, breath regulation, and stage presence protocols that turn nervous energy into presence.",
+      quote: "“I freeze when all eyes are on me”",
+      desc: "High-stakes moments trigger fight-or-flight. You’ll practice breath regulation and stillness protocols to turn adrenaline into presence.",
     },
     {
-      quote: "“My voice and body language don't match what I'm saying”",
-      desc: "Restless hands, tense shoulders, and a flat monotone voice unintentionally undermine your authority.",
-      inside: "You’ll align physical stillness, non-verbal congruence, and dynamic gestural anchoring.",
+      quote: "“My body language undermines my words”",
+      desc: "Restless hands and tense posture distract listeners. You’ll align physical stillness and intentional gestures so your delivery matches your conviction.",
     },
   ];
 
   return (
-    <section id="problem" className="py-16 sm:py-24 bg-[#FBF6F4] text-[#1F1E1E] relative">
+    <section id="problem" className="py-14 sm:py-20 bg-[#FBF6F4] text-[#1F1E1E] relative">
       <div id="struggling" className="absolute -top-20" />
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="max-w-[850px] mb-12 sm:mb-16">
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#1F1E1E] leading-[1.12] uppercase">
+        <div className="max-w-[850px] mb-10 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-[#1F1E1E] leading-[1.15] uppercase">
             Speaking up can sometimes feel like you're fighting an internal panic button
           </h2>
 
-          <p className="mt-4 text-base sm:text-lg text-[#5D3C23] font-normal leading-relaxed">
-            “But there is a reason why some people speak with calm gravitas, hold attention in every room, and never freeze. It's all about building the right speech mechanics and frameworks.”
+          <p className="mt-3 text-base sm:text-lg text-[#5D3C23] font-normal leading-relaxed">
+            There is a reason why some people speak with calm gravitas and never freeze. It's about building the right speech mechanics and frameworks.
           </p>
 
-          <p className="mt-8 text-xs font-mono font-semibold uppercase tracking-widest text-[#8C6D58]">
+          <p className="mt-6 text-xs font-mono font-semibold uppercase tracking-widest text-[#8C6D58]">
             We know what you're struggling with...
           </p>
         </div>
 
-        {/* 6 Problem Cards in Creator College layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+        {/* 6 Problem Cards in Crisp Creator College layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {painCards.map((card, idx) => (
             <div
               key={idx}
-              className="p-6 sm:p-7 rounded-2xl sm:rounded-3xl bg-white border border-[#E5E7EB] shadow-[0_1px_3px_rgba(0,0,0,0.02)] flex flex-col justify-between"
+              className="p-6 rounded-2xl bg-white border border-[#E5E7EB] shadow-[0_1px_3px_rgba(0,0,0,0.02)] flex flex-col justify-between"
             >
               <div>
-                <h3 className="text-base sm:text-lg font-semibold text-[#1F1E1E] tracking-tight leading-snug">
+                <h3 className="text-base sm:text-lg font-bold text-[#1F1E1E] tracking-tight leading-snug">
                   {card.quote}
                 </h3>
-                <p className="mt-2.5 text-xs sm:text-sm text-[#4B5563] leading-relaxed font-normal">
+                <p className="mt-2 text-xs sm:text-sm text-[#4B5563] leading-relaxed font-normal">
                   {card.desc}
-                </p>
-              </div>
-
-              <div className="mt-6 pt-4 border-t border-[#F3F4F6]">
-                <span className="text-[10px] font-mono font-semibold tracking-widest text-[#8C6D58] uppercase block mb-1">
-                  INSIDE INTROVERT TO ICON:
-                </span>
-                <p className="text-xs sm:text-sm font-medium text-[#1F1E1E] leading-relaxed">
-                  {card.inside}
                 </p>
               </div>
             </div>
@@ -88,17 +73,17 @@ export default function StrugglingWithSection() {
         </div>
 
         {/* Kicker & Action */}
-        <div className="mt-14 sm:mt-16 text-center flex flex-col items-center">
+        <div className="mt-12 sm:mt-14 text-center flex flex-col items-center">
           <span className="text-xs font-mono font-semibold uppercase tracking-widest text-[#5D3C23]">
             Learn. Execute. Speak.
           </span>
           <h3 className="text-xl sm:text-2xl font-bold text-[#1F1E1E] mt-1">
-            Make 2026 the year you finally invest in yourself and speak with power!
+            Make 2026 the year you speak with calm authority.
           </h3>
 
           <Link
             href={checkoutUrl}
-            className="mt-6 w-[280px] sm:w-[320px] h-[60px] inline-flex items-center justify-center rounded-full bg-[#0D0906] hover:opacity-85 text-white font-semibold text-base tracking-wide transition-all duration-300 active:scale-[0.98]"
+            className="mt-5 w-[280px] sm:w-[320px] h-[60px] inline-flex items-center justify-center rounded-full bg-[#0D0906] hover:opacity-85 text-white font-semibold text-base tracking-wide transition-all duration-300 active:scale-[0.98]"
           >
             <span>JOIN INTROVERT TO ICON</span>
           </Link>

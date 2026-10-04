@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { ArrowUpRight, Instagram, Youtube, Linkedin } from "lucide-react";
+import { Instagram, Youtube, Linkedin } from "lucide-react";
 import { courseData } from "@/content/paritosh";
 
 import BrandLogo from "./BrandLogo";
@@ -10,33 +10,48 @@ import BrandLogo from "./BrandLogo";
 export default function Footer() {
   const { brand, socials, legalLinks, checkoutUrl } = courseData;
 
+  const exploreLinks = [
+    { label: "Why Paritosh", href: "#why-paritosh" },
+    { label: "The Problem", href: "#struggling" },
+    { label: "Curriculum", href: "#curriculum" },
+    { label: "The Method", href: "#method" },
+    { label: "FAQ", href: "#faq" },
+  ];
+
+  const legalItems = [
+    { label: "Privacy Policy", href: legalLinks.privacy },
+    { label: "Terms & Conditions", href: legalLinks.terms },
+    { label: "Refund Policy", href: legalLinks.refund },
+  ];
+
   return (
-    <footer className="bg-[#0D0906] text-white border-t border-neutral-800 pt-14 sm:pt-16 pb-28 sm:pb-32 xl:pb-16">
-      <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-12 pb-10 sm:pb-14 border-b border-neutral-800">
-          {/* Brand Col */}
-          <div className="md:col-span-5 flex flex-col justify-between">
-            <div>
-              <div className="mb-4">
-                <Link href="/" aria-label="Introvert To Icon by Paritosh Anand">
-                  <BrandLogo variant="dark" size="md" />
-                </Link>
-              </div>
+    <footer className="bg-[#0D0906] text-white">
+      <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 pb-28 sm:pb-32 xl:pb-16">
+        {/* Top: wordmark + two plain link columns */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-10 sm:gap-12">
+          {/* Brand */}
+          <div className="md:col-span-5">
+            <Link
+              href="/"
+              aria-label="Introvert To Icon by Paritosh Anand"
+              className="inline-flex"
+            >
+              <BrandLogo variant="dark" size="md" />
+            </Link>
 
-              <p className="text-xs text-neutral-400 max-w-sm leading-relaxed font-normal">
-                {brand.subtagline}
-              </p>
-            </div>
+            <p className="mt-5 max-w-sm text-sm sm:text-[15px] leading-relaxed text-neutral-400 font-normal">
+              {brand.subtagline}
+            </p>
 
-            <div className="mt-6 flex items-center gap-3">
+            <div className="mt-7 flex items-center gap-3">
               <a
                 href={socials.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Paritosh Anand on Instagram"
-                className="flex h-8 w-8 items-center justify-center rounded-full bg-neutral-900 hover:bg-neutral-800 text-neutral-300 hover:text-white transition-colors border border-neutral-800"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-white/5 hover:bg-white/10 text-neutral-300 hover:text-white transition-colors"
               >
-                <Instagram className="w-3.5 h-3.5" />
+                <Instagram className="w-4 h-4" />
               </a>
 
               <a
@@ -44,9 +59,9 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Paritosh Anand on YouTube"
-                className="flex h-8 w-8 items-center justify-center rounded-full bg-neutral-900 hover:bg-neutral-800 text-neutral-300 hover:text-white transition-colors border border-neutral-800"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-white/5 hover:bg-white/10 text-neutral-300 hover:text-white transition-colors"
               >
-                <Youtube className="w-3.5 h-3.5" />
+                <Youtube className="w-4 h-4" />
               </a>
 
               <a
@@ -54,138 +69,65 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Paritosh Anand on LinkedIn"
-                className="flex h-8 w-8 items-center justify-center rounded-full bg-neutral-900 hover:bg-neutral-800 text-neutral-300 hover:text-white transition-colors border border-neutral-800"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-white/5 hover:bg-white/10 text-neutral-300 hover:text-white transition-colors"
               >
-                <Linkedin className="w-3.5 h-3.5" />
+                <Linkedin className="w-4 h-4" />
               </a>
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div className="md:col-span-4 grid grid-cols-2 gap-6 text-xs font-mono">
-            <div>
-              <span className="font-bold text-neutral-300 uppercase tracking-widest block mb-3">
-                EXPLORE
-              </span>
-              <ul className="space-y-2 text-neutral-400">
-                <li>
-                  <a href="#why-paritosh" className="hover:text-white transition-colors">
-                    Why Paritosh
+          {/* Explore */}
+          <nav className="md:col-span-3" aria-label="Explore">
+            <ul className="space-y-5 sm:space-y-6 text-[16px] sm:text-[17px] leading-none text-neutral-200">
+              {exploreLinks.map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    className="hover:text-gold-300 transition-colors"
+                  >
+                    {link.label}
                   </a>
                 </li>
-                <li>
-                  <a href="#struggling" className="hover:text-white transition-colors">
-                    The Problem
-                  </a>
-                </li>
-                <li>
-                  <a href="#curriculum" className="hover:text-white transition-colors">
-                    Curriculum
-                  </a>
-                </li>
-                <li>
-                  <a href="#method" className="hover:text-white transition-colors">
-                    The Method
-                  </a>
-                </li>
-                <li>
-                  <a href="#faq" className="hover:text-white transition-colors">
-                    FAQ
-                  </a>
-                </li>
-              </ul>
-            </div>
+              ))}
+            </ul>
+          </nav>
 
-            <div>
-              <span className="font-bold text-neutral-300 uppercase tracking-widest block mb-3">
-                CONNECT
-              </span>
-              <ul className="space-y-2 text-neutral-400">
-                <li>
-                  <a
-                    href={socials.instagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-white transition-colors inline-flex items-center gap-1"
+          {/* Legal */}
+          <nav className="sm:text-right md:text-left md:col-span-4" aria-label="Legal">
+            <ul className="space-y-5 sm:space-y-6 text-[16px] sm:text-[17px] leading-none text-neutral-200">
+              {legalItems.map((item) => (
+                <li key={item.label}>
+                  <Link
+                    href={item.href}
+                    className="hover:text-gold-300 transition-colors"
                   >
-                    <span>Instagram</span>
-                    <ArrowUpRight className="w-3 h-3 text-neutral-500" />
-                  </a>
+                    {item.label}
+                  </Link>
                 </li>
-                <li>
-                  <a
-                    href={socials.youtube}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-white transition-colors inline-flex items-center gap-1"
-                  >
-                    <span>YouTube</span>
-                    <ArrowUpRight className="w-3 h-3 text-neutral-500" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={socials.introvertToIconInstagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-white transition-colors inline-flex items-center gap-1"
-                  >
-                    <span>@introverttoicon</span>
-                    <ArrowUpRight className="w-3 h-3 text-neutral-500" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={socials.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-white transition-colors inline-flex items-center gap-1"
-                  >
-                    <span>LinkedIn</span>
-                    <ArrowUpRight className="w-3 h-3 text-neutral-500" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Checkout direct block */}
-          <div className="md:col-span-3 flex flex-col justify-between">
-            <div>
-              <span className="text-[10px] font-mono font-bold text-gold-400 uppercase tracking-widest block mb-1.5">
-                OFFICIAL PORTAL
-              </span>
-              <p className="text-xs text-neutral-400 leading-relaxed mb-4 font-normal">
-                Secure checkout and portal access provided at learn.paritoshanand.com.
-              </p>
-            </div>
-
-            <Link
-              href={checkoutUrl}
-              className="h-[46px] px-6 inline-flex items-center justify-center rounded-full bg-white hover:bg-neutral-100 text-[#0D0906] font-semibold text-xs tracking-wider transition-all duration-300 active:scale-[0.98] shadow-sm"
-            >
-              GO TO CHECKOUT
-            </Link>
-          </div>
+              ))}
+            </ul>
+          </nav>
         </div>
 
-        {/* Legal & Copyright */}
-        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-mono text-neutral-500">
-          <div>
+        {/* Bottom: copyright + official portal lockup */}
+        <div className="mt-14 sm:mt-20 flex flex-col-reverse sm:flex-row items-start sm:items-end justify-between gap-6">
+          <p className="text-xs font-mono text-neutral-500">
             © {new Date().getFullYear()} Paritosh Anand. All rights reserved.
-          </div>
+          </p>
 
-          <div className="flex items-center gap-5">
-            <Link href={legalLinks.privacy} className="hover:text-white transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href={legalLinks.terms} className="hover:text-white transition-colors">
-              Terms &amp; Conditions
-            </Link>
-            <Link href={legalLinks.refund} className="hover:text-white transition-colors">
-              Refund Policy
-            </Link>
-          </div>
+          <a
+            href={checkoutUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group text-left sm:text-right"
+          >
+            <span className="block text-[10px] font-mono uppercase tracking-[0.22em] text-neutral-500 group-hover:text-neutral-400 transition-colors">
+              Official portal
+            </span>
+            <span className="mt-1.5 block text-base sm:text-lg font-bold tracking-tight text-white group-hover:text-gold-300 transition-colors">
+              learn.paritoshanand.com
+            </span>
+          </a>
         </div>
       </div>
     </footer>
