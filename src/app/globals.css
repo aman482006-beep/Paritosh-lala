@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #F1F1EF;
+  --foreground: #1F1E1E;
+  --surface: #FFFFFF;
+  --surface-muted: #EBEBE8;
+  --border: #E5E7EB;
+  --gold: #C69C2B;
+  --muted-text: #6B7280;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F1F1EF;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+  position: relative;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #EDEDEB;
+}
+::-webkit-scrollbar-thumb {
+  background: #CFCFCB;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ABABAA;
+}
+
+/* Offset for sticky nav */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+main, section, div, header, footer {
+  max-width: 100vw;
+}
